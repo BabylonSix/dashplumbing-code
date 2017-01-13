@@ -1,0 +1,34 @@
+// header height
+gh-height($height = $gh-height)
+	height: $height
+
+
+v-align()
+	position: relative
+	top: 50%
+	transform: translateY(-50%)
+	
+// button color
+button($bt-color = hsl(210, 93%, 62%))
+	color: lighten($bt-color, 95%)
+	background: $bt-color
+	border: 1*$px solid darken($bt-color, 10%)
+	border-radius: 4*$px
+	text-decoration: none
+	white-space: nowrap
+	padding: 10*$px
+	margin: 4*$px
+	transition: all 100ms ease
+	&:hover
+		background: darken($bt-color, 20%)
+
+responsive-img()
+	max-width: 100%
+	height: auto
+	border: 0
+
+$horizontal-divider-bottom()
+	border-bottom: 2*$px solid $horizontal-rule
+
+$horizontal-divider-top()
+	border-top: 2*$px solid $horizontal-rule

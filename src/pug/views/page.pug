@@ -1,0 +1,10 @@
+extends default
+
+block site-content
+	//- Page Variables
+	- var urlReadyPageTitle = PageTitle.toLowerCase().replace(/ /g, '-')
+
+	include partials/hero
+
+	main.content-area
+		block page-content

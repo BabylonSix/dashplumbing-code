@@ -1,0 +1,38 @@
+//- This project follows Inverted Triangle CSS (ITCSS)
+//- Files should be organized by groups which are described below.
+//- As we go down our list of files we should go from:
+//-   Generic to explicit
+//-   Far-reaching to localised
+//-   Low specificity to high specificity
+
+@charset "utf-8"; // Set CSS to utf-8
+
+//- VENDORS
+@import 'typographic'
+
+//- SETTINGS
+@import '1.settings.global'
+@import '1.settings.colors'
+@import '1.settings.mixins'
+@import '1.settings.variables'
+
+//- BASE
+@import '2.base.box-sizing'
+@import '2.base.foundation'
+
+//- ELEMENTS
+@import '3.element.typography'
+@import '3.element.pictures'
+
+//- MODULES
+@import '4.module.page'
+@import '4.module.header'
+@import '4.module.floating-header'
+@import '4.module.content'
+@import '4.module.forms'
+@import '4.module.hero'
+@import '4.module.hero-nav'
+@import '4.module.footer'
+
+//= PAGES
+@import 'page.schedule'

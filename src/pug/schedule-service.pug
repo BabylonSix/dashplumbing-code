@@ -1,0 +1,50 @@
+extends views/default
+
+append config
+	- var PageTitle = 'Schedule Services'
+	- var Description = 'Fill out the requested information and within 2 business hours, you’ll recieve a phonecall or text from one of our representatives to discuss your plumbing problem, and put you into a schedule timeframe that works for you.'
+
+block site-content
+
+	section.schedule-info
+		.schedule-info__wrapper
+			p.schedule-info__paragraph Please fill out the requested information below.
+			p.schedule-info__paragraph Within 2 business hours, you’ll recieve a phonecall or text from one of our representatives to discuss your plumbing problem, and put you into a schedule timeframe that works for you.
+
+	section.schedule-section
+		form.form(name='contact' action='//formspree.io/formspree@plumbingflow.com' method='POST')
+			//- Contact
+			fieldset.form__group
+				legend.form__group-name Contact
+
+				label
+					input.form__input(name='full-name' type='text' tabindex='1' autofocus required)
+					.form__label Full Name
+
+				label
+					input.form__input(name='tel-number' type='tel' tabindex='2' required)
+					.form__label Tel Number
+
+				label
+					input.form__input(name='email' type='email' autocomplete='email' tabindex='3' required)
+					.form__label Email
+
+			//- Location
+			fieldset.form__group
+				legend.form__group-name Location
+
+				label
+					input.form__input(name='address' type='text' autocomplete='street-address' tabindex='4' required)
+					.form__label Address
+
+				label
+					input.form__input(name='zip-code' type='number' autocomplete='postal-code' tabindex='5' required)
+					.form__label Zip Code
+
+			//- Problem
+			fieldset.form__group
+				legend.form__group-name Problem
+				textarea.form__text-area(name='problem' placeholder='describe your problem in a few words' type='text' tabindex='6')
+
+			//- Submit
+			input.form__submit(type='submit' value='Submit' tabindex='7')

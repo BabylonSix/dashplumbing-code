@@ -1,0 +1,37 @@
+{
+  "name": "layout",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^6.1.0",
+    "axis": "^0.5.2",
+    "browser-sync": "^2.10.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-combine-mq": "^0.4.0",
+    "gulp-csscss": "^0.1.2",
+    "gulp-csso": "^1.0.1",
+    "gulp-minify-html": "^1.0.4",
+    "gulp-minisite": "^3.0.2",
+    "gulp-plumber": "^1.0.1",
+    "gulp-postcss": "^6.0.1",
+    "gulp-pug": "^3.2.0",
+    "gulp-rucksack": "^0.1.2",
+    "gulp-sitemap": "^2.2.0",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-stylus": "^2.1.0",
+    "gulp-zopfli": "^1.0.0",
+    "imagemin-svgo": "^4.2.0",
+    "lost": "^6.6.2",
+    "run-sequence": "^1.1.4",
+    "rupture": "^0.6.1",
+    "typographic": "^2.9.3",
+    "vinyl-ftp": "^0.4.5"
+  }
+}

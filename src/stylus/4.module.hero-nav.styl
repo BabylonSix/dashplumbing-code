@@ -1,0 +1,178 @@
+.hero // Contains the hero nav sections
+	&-full-height
+		min-height: 600*$px
+	&-half-height
+		min-height: 300*$px
+	$horizontal-divider-bottom()
+	align-items: center
+	background: $hero-nav-section-bg
+	display: flex
+	flex-wrap: wrap
+	height: 100%
+	justify-content: space-around
+	margin-bottom: $vertical-space-iphone
+	width: 100%
+	position: relative
+	+above(1280px)
+		$horizontal-divider-top()
+		border-radius: 6*$px 0 6*$px 6*$px
+	&:after
+		background-position: center
+		background-repeat: no-repeat
+		background-size: cover
+		content: ''
+		top: 0
+		bottom: 0
+		left: 0
+		right: 0
+		opacity: 0.18
+		z-index: 0
+		position: absolute
+
+	+below(960px)
+		justify-content: space-between
+
+
+	&__header
+		font-size: 4.5vw + 4vh + 2vmin
+		font-weight: 800
+		color: white
+		width: 100%
+		text-align: center
+		+above(1260px)
+			font-size: 140px
+
+
+	// How the hero section looks at different sizes
+	$hero-section-width()
+		border-radius: 8*$px
+		width: 230*$px
+		height: 520*$px
+		+between(800px, 920px)
+			border-radius: 8*$px
+			width: 200*$px
+
+		+between(744px, 799px)
+			border-radius: 0
+			width: 186*$px
+
+		+below(744px)
+			width: 46vw
+			border-radius: 0
+
+		+below(380px)
+			width: 90vw
+
+		// +between(600px, 743px)
+		// 	border-radius: 0
+		// 	width: 270*$px
+		//
+		// +between(401px, 599px)
+		// 	border-radius: 0
+		// 	width: 200*$px
+		//
+		// +between(361px, 400px)
+		// 	border-radius: 0
+		// 	width: 186*$px
+		//
+		// +below(360px)
+		// 	width: 250*$px
+		// 	border-radius: 8*$px
+
+	&__section // A hero nav section, eg: plumbing, sewer & drain, etc
+		$hero-section-width()
+		position: relative
+
+		&-header // info containers header
+			color: $hero-info-text
+			font-size: 28px
+			font-weight: 400
+			margin-top 30px
+			user-select: none
+
+		// Display .hero__nav on hover instead of default .hero__info
+		&:hover > .hero__nav
+			display: flex
+			flex-flow: column
+			align-items: center
+			background: $hero-nav-bg
+
+	&__info // Container that's shown by default
+		$hero-section-width()
+		background: hsla($hero-info-bg, 90%)
+		position: absolute
+		top: 0
+		z-index: 100
+		display: flex
+		flex-flow: column
+		align-items: center
+
+	&__logo // info containers logo
+		margin-top 30px
+		border 1px solid $hero-nav-logo-border
+		border-radius: 14px
+
+		// special rule
+		// when container width is 200px, make margin smaller
+		+between(800px, 920px)
+			margin-top 20px
+		+below(600px)
+			margin-top 20px
+		// end special rule
+		// iPhone 4, 4c, 4s
+
+		+below(320px)
+			font-size: 36px
+			margin-top 20px
+
+
+	&__paragraph // info containers paragraph
+		color: $hero-info-text
+		font-size: 16*$px
+		line-height: 30*$px
+		margin: 16*$px 30*$px
+		user-select: none
+		font-weight: 300
+
+		//special rule
+		// when container width is 200px, make margin smaller
+		+between(800px, 920px)
+			margin: 10*$px 20*$px
+		+between(744px, 800px)
+			margin: 10*$px 14*$px
+		+below(600px)
+			font-size: 15*$px
+			margin: 10*$px 20*$px
+		// end special rule
+
+		// iPhone 4, 4c, 4s
+		+below(320px)
+			font-size: 18*$px
+			line-height: 30*$px
+			margin-top 20*$px
+
+
+	&__nav // Container that's shown when hero section is hovered over
+		$hero-section-width()
+		display: none
+		position: absolute
+		top: 0
+		z-index: 200
+
+	&__link // links to more in depth parts of the section
+		button($hero-nav-button)
+		text-align: center
+		font-size: 20*$px
+		font-weight: 400
+		width: 180*$px
+		hight: 30*$px
+		color: white
+		+below(920px)
+			font-size: 18*$px
+		+below(600px)
+			font-weight: 300
+
+		$vertical-gutter = 32*$px // control the vertical gutter
+		margin-bottom: $vertical-gutter
+		&:first-of-type
+			margin-top: $vertical-gutter

@@ -1,0 +1,28 @@
+//
+// Global Footer
+//
+
+.gf
+	$horizontal-divider-top()
+	$horizontal-divider-bottom()
+	&-menu
+		background: $footer-bg
+		height: 150*$px
+		+below(369px)
+			height: 200*$px
+		+below(320px)
+			height: 320*$px 
+	
+	&-nav
+		v-align()
+		margin-left: 10*$px
+		margin-right: 10*$px
+		float: right
+		
+		list-style-type: none
+		&__item
+			display: inline-block
+		&__link
+			button(blue)
+			font-size: 18*$px
+			line-height: 58*$px 

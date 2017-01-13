@@ -1,0 +1,51 @@
+.copy
+	display: flex
+	flex-direction: column
+	margin: 0 auto
+	max-width: 800*$px
+	margin-bottom: $vertical-space
+	&:first-of-type
+		margin-top: $vertical-space
+	+below(880px)
+		margin-left: 40*$px
+		margin-left: 40*$px
+	+below(500px)
+		margin-left: 20*$px
+		margin-left: 20*$px
+
+	&__head
+		display: flex
+		flex-direction: row
+		align-items: center
+		margin-bottom: $paragraph-space
+
+	&__logo
+		width: 130*$px
+		+below(376px)
+			width: 80*$px
+			responsive-img()
+
+	&__header
+		margin-left: 20*$px
+		font-size: 8.5vw
+		align-self: auto
+		+above(653px)
+			font-size: 44*$px
+
+
+	&__paragraph
+		font-size: $paragraph-size
+		line-height: $paragraph-space
+		margin-bottom: $paragraph-space
+		&:last-of-type
+			margin-bottom: 0
+
+
+.social
+	align-self: center
+	display: flex
+	flex-direction: row
+	align-items: center
+	justify-content: space-around
+	width: 320*$px
+	margin-top: $vertical-space
