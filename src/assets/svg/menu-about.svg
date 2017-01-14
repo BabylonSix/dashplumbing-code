@@ -1,0 +1,27 @@
+
+<svg width="180px" height="180px" viewBox="0 0 180 180" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch Beta 42 (36679) - http://www.bohemiancoding.com/sketch -->
+    <desc>Created with Sketch Beta.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="180" height="180" rx="10.4046243"></rect>
+        <radialGradient cx="50%" cy="47.7411414%" fx="50%" fy="47.7411414%" r="46.5770082%" id="radialGradient-3">
+            <stop stop-color="#C1C1C1" offset="0%"></stop>
+            <stop stop-color="#919191" offset="100%"></stop>
+        </radialGradient>
+    </defs>
+    <g id="Menu-About" stroke="none" fill="none" stroke-width="1" fill-rule="evenodd">
+        <g id="About-Us">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="Mask" fill="#C7C7C7" xlink:href="#path-1"></use>
+            <path d="M105.8,126.6 L71,126.6 L63.4,157.8 L26,157.8 L65,23 L113.2,23 L153.4,157.8 L114.4,157.8 L105.8,126.6 Z M75.8,100 L100.8,100 L94.6,75.8 C92.6,68.2 90,57 87.8,49.2 L87.4,49.2 C85.4,57 83.4,68.2 81.6,75.8 L75.8,100 Z" id="A" fill="#4A4A4A" mask="url(#mask-2)"></path>
+            <g id="Corner-Go" mask="url(#mask-2)">
+                <g transform="translate(129.000000, 129.000000)">
+                    <circle id="Oval-2" stroke="#898989" stroke-width="2" fill="url(#radialGradient-3)" cx="41.5" cy="41.5" r="41.5"></circle>
+                    <path d="M25.38,31 L17.46,31 L17.46,35.2 L20.16,35.2 L20.16,38.68 C19.89,38.8 19.2,38.86 18.45,38.86 C15.15,38.86 12.72,36.67 12.72,32.89 C12.72,28.78 15.48,27.04 18.81,27.04 C21.09,27.04 22.47,27.4 23.61,27.88 L24.69,23.56 C23.64,23.05 21.57,22.57 18.84,22.57 C12.3,22.57 7.05,26.14 7.02,33.16 C7.02,36.07 8.01,38.68 9.9,40.48 C11.73,42.22 14.43,43.21 18.39,43.21 C21.03,43.21 23.85,42.58 25.38,42.07 L25.38,31 Z M37.98,22.42 C44.49,22.42 47.79,27.25 47.79,32.68 C47.79,39.19 43.89,43.33 37.65,43.33 C31.38,43.33 27.93,38.62 27.93,33.01 C27.93,27.1 31.77,22.42 37.98,22.42 Z M37.86,26.71 C35.31,26.71 33.66,29.17 33.66,32.89 C33.66,36.7 35.31,39.04 37.92,39.04 C40.53,39.04 42.06,36.49 42.06,32.83 C42.06,29.35 40.5,26.71 37.86,26.71 Z" id="GO" stroke="none" fill="#4A4A4A"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

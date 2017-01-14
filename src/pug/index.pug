@@ -9,35 +9,7 @@ block site-content
 	include views/partials/nav
 
 	main.content-area
-
-		+page-section('Excellent Workmanship', 'five-stars.svg')
-				+p.
-					We are a family owned and operated plumbing services company, and
-					We like to make our money the old fasioned way,
-					By delivering high quality, uncompromised
-					service and workmanship, with no shortcuts.
-				+p We are professional plumbers, respectful people, and on time.
-				+p If your pipes are clogged and need to be cleaned, we can do that.
-				+p If your water is not flowing properly, we can fix that.
-				+p If you need a bathroom remodeled, we can do that too
-				+p Bottom line: We provide solutions to your problems.
-
-		+page-section('Your time is valuable', 'time.svg')
-				+p.
-					We understand that life is complicated,
-					So we do everything in our power to
-					be on time, on track, to provide services you need.
-
-		+page-section('We’ve got you covered', 'payment.svg')
-				+p.
-					When emergencies happen,
-					You can rely on us.
-					We accept multiple forms of
-					payment options, so you wont
-					be left in the cold.
-				+p We’ll help you on the spot.
-
-				section.social
-					p.social__cta find us on:
-					a(href='https://www.bbb.org/'): img.social__image(src='/img/bbb-logo.svg')
-					a(href='http://www.yelp.com/'): img.social__image(src='/img/yelp-logo.svg')
+		include sections/residential
+		include sections/commercial
+		include sections/services
+		include sections/about
