@@ -1,26 +1,30 @@
-mixin super-section(title)
-	// create lower case variable with dashes
-	// of whatever we put into the title
-	- var sectionTitle = title.toLowerCase().replace(/ /g, '-')
+mixin super-section(title, img)
+	//- create lower case variable with dashes
+	//- of whatever we put into the title
+	- var sectionLink = title.toLowerCase().replace( / /g, '-' )
 
-	a(name= sectionTitle)
+	//- Section Link
+	if title
+		a(name= sectionLink)
 
-	.hero.hero-half-height
-		.hero__header= title
-	section.copy
-		.copy__head
+		//- Title
+		.hero.hero-half-height
 			if !title
-				h2.copy__header Add Section Title
+				.hero__header( src= '/img/' + img) Add Section Title
+			else
+				.hero__header= title
 
-		.copy__content
-			block
+		//- Content
+		section.copy
+			.copy__content
+				block
 
 
 mixin page-section(title, img)
 	section.copy
 		.copy__head
 			if img
-				img.copy__logo(src= '/img/' + img )
+				img.copy__logo( src= '/img/' + img )
 
 			if title
 				h2.copy__header= title
