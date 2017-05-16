@@ -14,7 +14,7 @@ var sitemap      = require('gulp-sitemap');
 
 // Stylus
 var stylus       = require('gulp-stylus');
-var axis         = require('axis');
+var axis         = require('axis');        // styles
 var rupture      = require('rupture');     // media queries
 var typo         = require('typographic'); // typography
 var lost         = require('lost');        // grids
@@ -111,7 +111,7 @@ gulp.task('stylus', () => {
 			errors: true,
 			use: [axis(), rupture(), typo()]
 		})	)
-		.pipe(	rucksack()	)
+		// .pipe(	rucksack()	)
 		.pipe(	postcss([
 			lost(),
 			autoprefixer({ browsers: ['last 2 versions', '> 5%'] })
