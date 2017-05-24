@@ -73,10 +73,10 @@ const src = {
 
 // build directories
 const build = {
-	html: '../build/',
-	css:  '../build/css/',
-	js:   '../build/js/',
-	img:  '../build/img/'
+	html: './build/',
+	css:  './build/css/',
+	js:   './build/js/',
+	img:  './build/img/'
 };
 
 // sitemap site url
