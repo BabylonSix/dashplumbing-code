@@ -160,7 +160,7 @@ gulp.task('png', () => {
 gulp.task( 'default', ['pug', 'stylus', 'js', 'svg', 'jpeg', 'png'], () => {
 
 	browserSync.init({
-		server: '../build/'
+		server: './build/'
 	});
 
 	gulp.watch( src.pugAll,    [ 'pug'    ]);
