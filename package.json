@@ -26,7 +26,6 @@
     "gulp-sitemap": "^4.2.0",
     "gulp-sourcemaps": "^2.6.0",
     "gulp-stylus": "^2.6.0",
-    "gulp-zopfli": "^1.0.0",
     "imagemin": "^5.3.1",
     "imagemin-svgo": "^5.2.1",
     "lost": "^8.2.0",

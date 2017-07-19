@@ -39,12 +39,6 @@ var reload       = browserSync.reload;
 var plumber      = require('gulp-plumber'); // Catch Errors
 var runSequence  = require('run-sequence');
 
-// Compression
-var zopfli       = require('gulp-zopfli'); // gzips files
-// add the following line to your .htaccess so that
-// apache could serve up pre-compressed content:
-// Options FollowSymLinks MultiViews
-
 // Deployment
 var ftp          = require('vinyl-ftp');
 
