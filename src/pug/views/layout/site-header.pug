@@ -5,8 +5,9 @@ header.gh
 	.gh-hotline
 		article.gh-hotline__wrapper
 			h4.gh-hotline__header Service Hotline
-			h4.gh-hotline__phone #{phoneNumber}
+			a(onclick=`goog_report_conversion ('tel:${phoneNumberDashed}')` href=`${siteName}`): h4.gh-hotline__phone #{phoneNumber}
 
 header.fh
 	a(href='/index.html'): img.fh-logo(src='/img/mini-logo.svg')
-	.fh-call #{phoneNumber}
+	a(onclick=`goog_report_conversion ('tel:${phoneNumberDashed}')` href=`${siteName}`): .fh-call #{phoneNumber}
+	
