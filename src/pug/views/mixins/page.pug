@@ -1,7 +1,7 @@
-mixin super-section(title, img)
+mixin super-section(title)
 	//- create lower case variable with dashes
 	//- of whatever we put into the title
-	- var sectionLink = title.toLowerCase().replace( / /g, '-' )
+	- var sectionLink = title.toLowerCase().replace( / +?/g, '-' )
 
 	//- Section Link
 	if title
@@ -10,7 +10,7 @@ mixin super-section(title, img)
 		//- Title
 		.hero.hero-half-height
 			if !title
-				.hero__header( src= '/img/' + img) Add Section Title
+				.hero__header ERROR: Add Section Title
 			else
 				.hero__header= title
 
