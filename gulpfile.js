@@ -222,15 +222,6 @@ gulp.task('pro_js', () => {
 });
 
 
-
-// SVG Optimization
-gulp.task('pro_svg', () => {
-	return gulp.src(src.svg)
-		.pipe(	plumber()	)
-		.pipe(	svgo()()	)
-		.pipe(	gulp.dest(pro.img)	);
-});
-
 // JPEG Optimization
 gulp.task('pro_jpeg', () => {
 	return gulp.src(src.jpeg)
@@ -254,7 +245,7 @@ gulp.task('sitemap', function () {
 
 
 // Production Build Task
-gulp.task( 'pro', ['pro_pug', 'pro_stylus', 'pro_js', 'pro_svg', 'pro_jpeg', 'pro_png', 'sitemap'], () => {});
+gulp.task( 'pro', ['pro_pug', 'pro_stylus', 'pro_js', 'pro_jpeg', 'pro_png', 'sitemap'], () => {});
 
 
 
