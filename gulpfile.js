@@ -51,17 +51,18 @@ var ftp          = require('vinyl-ftp');
 
 // src files
 const src = {
-	//code assets
-	pug:       ['./src/pug/**/*.pug', '!./src/pug/views/**/*.pug'],
-	pugAll:     './src/pug/**/*.pug',
-	stylus:     './src/stylus/style.styl',
-	stylusAll:  './src/stylus/**/*.styl',
-	js:         './src/js/*.js',
+  //code assets
+  pugIndex: ["./src/pug/index.pug"],
+  pug: ["./src/pug/**/*.pug", "!./src/pug/views/**/*.pug"],
+  pugAll: "./src/pug/**/*.pug",
+  stylus: "./src/stylus/style.styl",
+  stylusAll: "./src/stylus/**/*.styl",
+  js: "./src/js/*.js",
 
-	// image assets
-	svg:        './src/assets/svg/**/*.svg',
-	jpeg:      ['./src/assets/jpg/**/*.jpg', './src/assets/jpg/**/*.jpeg'],
-	png:        './src/assets/png/**/*.png'
+  // image assets
+  svg: "./src/assets/svg/**/*.svg",
+  jpeg: ["./src/assets/jpg/**/*.jpg", "./src/assets/jpg/**/*.jpeg"],
+  png: "./src/assets/png/**/*.png"
 };
 
 
@@ -88,7 +89,7 @@ const siteURL = {
 
 // pug >> HTML
 gulp.task('pug', () => {
-	return gulp.src(src.pug)
+	return gulp.src(src.pugIndex)
 		.pipe(	plumber()	)
 		.pipe(	pug({pretty: true})	)
 		.pipe(	gulp.dest(build.html)	)
@@ -185,7 +186,7 @@ var pro = {
 
 // pug >> HTML
 gulp.task('pro_pug', () => {
-	return gulp.src(src.pug)
+	return gulp.src(src.pugIndex)
 		.pipe(	plumber()	)
 		.pipe(	pug()	)
 		.pipe(	minifyHTML({

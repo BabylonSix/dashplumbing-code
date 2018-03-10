@@ -5,9 +5,17 @@ header.gh
 	.gh-hotline
 		article.gh-hotline__wrapper
 			h4.gh-hotline__header Service Hotline
-			a(onclick=`goog_report_conversion ('tel:${phoneNumberDashed}')` href=`${siteName}`): h4.gh-hotline__phone #{phoneNumber}
+			
+			meta(name='format-detection', content='telephone=yes')
+			h4.gh-hotline__phone #{phoneNumber}
+			//- a(onclick=`goog_report_conversion ('tel:${phoneNumberDashed}')` href=`${siteName}`)
 
 header.fh
 	a(href='/index.html'): img.fh-logo(src='/img/mini-logo.svg')
-	a(onclick=`goog_report_conversion ('tel:${phoneNumberDashed}')` href=`${siteName}`): .fh-call #{phoneNumber}
+		
+	
+	meta(name='format-detection', content='telephone=yes')
+	.fh-call #{phoneNumber}
+		//- google report conversion is interfering with the iPhone phone number format detection, investigate it, we can't use the conversion reporter until we find a solution that works
+		//- a(href=`${siteName}` onclick=`goog_report_conversion ('tel:${phoneNumberDashed}')`)
 	
